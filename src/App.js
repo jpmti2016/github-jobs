@@ -6,8 +6,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import JobDetail from "./components/Jobs/JobDetail";
 
-const initialState = { color: "#000000", title: "" };
-
 function App() {
   const [jobs, setJobs] = useState([]);
 
@@ -18,13 +16,13 @@ function App() {
         <Switch>
           <Route
             exact
-            path="/"
+            path="/github-jobs"
             render={(props) => (
               <Jobs {...props} jobs={jobs} setJobs={setJobs} />
             )}
           />
           <Route
-            path={`/job/:jobId`}
+            path={`/github-jobs/job/:jobId`}
             render={(props) => <JobDetail {...props} />}
           />
         </Switch>

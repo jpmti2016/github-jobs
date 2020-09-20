@@ -34,23 +34,6 @@ const Jobs = ({ jobs, setJobs }) => {
   }, [search, location, fulltime]);
 
   // useEffect(() => {
-  //   const getGitHubJobs = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         `/positions.json?description=${search}`
-  //       );
-
-  //       setJobs(response.data);
-  //       setNumberOfItems(response.data.length);
-  //     } catch (error) {
-  //       console.error("getJobsCall search", error);
-  //     }
-  //   };
-
-  //   getGitHubJobs();
-  // }, [search]);
-
-  // useEffect(() => {
   //   setFullTime(false);
   // }, [jobs]);
 

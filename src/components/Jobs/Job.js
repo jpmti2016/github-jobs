@@ -29,7 +29,7 @@ const Job = ({ job }) => {
         <div className="footer text-xs leading-none align-top mt-3 pb-2 sm:flex sm:justify-between w-full">
           <Link
             to={{
-              pathname: `/job/${job.id}`,
+              pathname: `github-jobs/job/${job.id}`,
               state: { job, posted: job ? timeAgo.from(today) : "" },
             }}
           >
