@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-import axios from "axios";
-
 import Job from "./Job";
 import Pagination from "../Pagination";
 import SearchForm from "./SearchForm";
 import SelectForm from "./SelectForm";
+
+import axios from "axios";
+axios.defaults.baseURL = "https://jobs.github.com";
 
 const Jobs = ({ jobs, setJobs }) => {
   const [currentPage, setCurrentPage] = useState(1);
