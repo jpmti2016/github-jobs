@@ -1,4 +1,4 @@
-# job-trace
+# github-jobs
 
 Making API calls is key to web development. This project explored the use of axios to make API request with a high level API.
 
@@ -6,11 +6,11 @@ Also it was a way to implement the Github jobs challenge pusblished by devchalle
 
 Flexbox and css combinators continue amazing me.
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jpmti2016/job-trace)
-![GitHub last commit](https://img.shields.io/github/last-commit/jpmti2016/job-trace)
-![GitHub top language](https://img.shields.io/github/languages/top/jpmti2016/job-trace)
-![GitHub language count](https://img.shields.io/github/languages/count/jpmti2016/job-trace)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fjob-trace%2F)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jpmti2016/github-jobs)
+![GitHub last commit](https://img.shields.io/github/last-commit/jpmti2016/github-jobs)
+![GitHub top language](https://img.shields.io/github/languages/top/jpmti2016/github-jobs)
+![GitHub language count](https://img.shields.io/github/languages/count/jpmti2016/github-jobs)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub-jobs%2F)
 
 ## Technologies
 

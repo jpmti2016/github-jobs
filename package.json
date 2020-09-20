@@ -1,14 +1,9 @@
 {
-  "name": "job-trace",
+  "name": "github-jobs",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://jobs.github.com",
   "dependencies": {
-    "@aws-amplify/auth": "^3.3.1",
-    "@aws-amplify/core": "^3.4.2",
-    "@aws-amplify/datastore": "^2.2.6",
-    "@aws-amplify/storage": "^3.2.9",
-    "@aws-amplify/ui-react": "^0.2.11",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
