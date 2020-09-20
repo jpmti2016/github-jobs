@@ -14,8 +14,7 @@ const Jobs = ({ jobs, setJobs }) => {
   const [numberOfButtons, setNumberOfButtons] = useState(5);
   const [search, setSearch] = useState("");
   const [fulltime, setFullTime] = useState(false);
-  const [location, setLocation] = useState("London");
-  const [tickChanged, setTickChanged] = useState(true);
+  const [location, setLocation] = useState("New York");
 
   useEffect(() => {
     const getGitHubJobs = async () => {
@@ -32,24 +31,24 @@ const Jobs = ({ jobs, setJobs }) => {
     };
 
     getGitHubJobs();
-  }, [location, fulltime]);
+  }, [search, location, fulltime]);
 
-  useEffect(() => {
-    const getGitHubJobs = async () => {
-      try {
-        const response = await axios.get(
-          `/positions.json?description=${search}`
-        );
+  // useEffect(() => {
+  //   const getGitHubJobs = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `/positions.json?description=${search}`
+  //       );
 
-        setJobs(response.data);
-        setNumberOfItems(response.data.length);
-      } catch (error) {
-        console.error("getJobsCall search", error);
-      }
-    };
+  //       setJobs(response.data);
+  //       setNumberOfItems(response.data.length);
+  //     } catch (error) {
+  //       console.error("getJobsCall search", error);
+  //     }
+  //   };
 
-    getGitHubJobs();
-  }, [search]);
+  //   getGitHubJobs();
+  // }, [search]);
 
   // useEffect(() => {
   //   setFullTime(false);
@@ -60,7 +59,6 @@ const Jobs = ({ jobs, setJobs }) => {
   };
 
   const onTickLocation = (event) => {
-    setTickChanged((value) => !value);
     setLocation(event.target.value);
   };
 

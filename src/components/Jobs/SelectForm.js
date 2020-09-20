@@ -57,13 +57,13 @@ const SelectForm = ({
         <div className="control mt-6">
           <label htmlFor="london" className="text-sm">
             <input
-              type="radio"
-              name="radio-location"
+              type="checkbox"
+              name="checkbox-location"
               id="london"
               checked={location === "London"}
               value="London"
               onChange={(event) => onTickLocation(event)}
-              className="form-radio h-5 w-5 text-blue-500"
+              className="form-checkbox h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               London
@@ -73,13 +73,13 @@ const SelectForm = ({
         <div className="control mt-4">
           <label htmlFor="amsterdam" className="text-sm">
             <input
-              type="radio"
-              name="radio-location"
+              type="checkbox"
+              name="checkbox-location"
               id="amsterdam"
               checked={location === "Amsterdam"}
               value="Amsterdam"
               onChange={(event) => onTickLocation(event)}
-              className="form-radio h-5 w-5 text-blue-500"
+              className="form-checkbox h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               Amsterdam
@@ -89,13 +89,13 @@ const SelectForm = ({
         <div className="control mt-4">
           <label htmlFor="newyork" className="text-sm">
             <input
-              type="radio"
-              name="radio-location"
+              type="checkbox"
+              name="checkbox-location"
               id="newyork"
               checked={location === "New York"}
               value="New York"
               onChange={(event) => onTickLocation(event)}
-              className="form-radio h-5 w-5 text-blue-500"
+              className="form-checkbox h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               New York
@@ -105,13 +105,13 @@ const SelectForm = ({
         <div className="control mt-4">
           <label htmlFor="berlin" className="text-sm">
             <input
-              type="radio"
-              name="radio-location"
+              type="checkbox"
+              name="checkbox-location"
               id="berlin"
               checked={location === "Berlin"}
               value="Berlin"
               onChange={(event) => onTickLocation(event)}
-              className="form-radio h-5 w-5 text-blue-500"
+              className="form-checkbox h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               Berlin

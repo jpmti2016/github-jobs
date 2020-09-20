@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 
 import bgi from "./backgroundImg.png";
 
 const SearchForm = ({ setSearch }) => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
     setSearch(data.search);
     e.target.reset();
