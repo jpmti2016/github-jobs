@@ -51,7 +51,3 @@ Flexbox and css combinators continue amazing me.
    6. Shows a detailed website performance report.
 3. RespImageLint
    1. Used to detect images's issues.
-4. Sizzy
-   1. Show the page in different devices at once.
-   2. Sync your action to all devices.
-   3. Make easy screenshot.
