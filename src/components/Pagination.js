@@ -27,7 +27,7 @@ const Pagination = ({
       className={`p-2 mr-3 border border-gray-700 rounded flex flex-row items-center justify-center ${
         item === currentPage
           ? "bg-blue-700 text-blue-200 active:bg-blue-900 active:text-blue-200"
-          : "hover:border-blue-700 hover:text-blue-700"
+          : "cursor-pointer hover:border-blue-700 hover:text-blue-700"
       }`}
       onClick={() => handleClick(item)}
     >
@@ -41,7 +41,7 @@ const Pagination = ({
         className={`p-2 mr-3 border border-gray-700 rounded flex flex-row items-center justify-center ${
           buttons && buttons[0] === currentPage
             ? "hover:bg-gray-300 hover:border-gray-100 hover:text-gray-100 cursor-not-allowed hidden"
-            : "hover:text-blue-700 hover:border-blue-700"
+            : "cursor-pointer hover:text-blue-700 hover:border-blue-700"
         } active:bg-blue-900 
         `}
         onClick={() => handleClick(currentPage - 1)}
@@ -62,7 +62,7 @@ const Pagination = ({
         className={`p-2 border border-gray-700 rounded flex flex-row items-center justify-center ${
           buttons?.reverse()[0] === currentPage
             ? "hover:bg-gray-300 hover:border-gray-100 hover:text-gray-100 cursor-not-allowed hidden"
-            : "hover:text-blue-700 hover:border-blue-700"
+            : "cursor-pointer hover:text-blue-700 hover:border-blue-700"
         }`}
         onClick={() => handleClick(currentPage + 1)}
       >
