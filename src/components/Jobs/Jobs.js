@@ -67,7 +67,7 @@ const Jobs = ({ jobs, setJobs }) => {
         />
         <div className="sm:w-3/4 mb-2">
           {pageJobs?.length > 0 ? (
-            pageJobs.map((job) => <Job job={job} key={job.id} />)
+            pageJobs?.map((job) => <Job job={job} key={job.id} />)
           ) : (
             <p className="font-medium shadow-sm mt-6 sm:mt-10">
               There is no jobs to show based in your search query
