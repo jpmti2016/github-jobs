@@ -6,7 +6,7 @@ import SearchForm from "./SearchForm";
 import SelectForm from "./SelectForm";
 
 import axios from "axios";
-axios.defaults.baseURL = "https://jobs.github.com";
+// axios.defaults.baseURL = "https://jobs.github.com";
 
 const Jobs = ({ jobs, setJobs }) => {
   const [currentPage, setCurrentPage] = useState(1);
