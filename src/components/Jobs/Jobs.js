@@ -25,7 +25,7 @@ const Jobs = ({ jobs, setJobs }) => {
         );
 
         setJobs(response.data);
-        setNumberOfItems(response.data.length);
+        setNumberOfItems(response?.data?.length);
       } catch (error) {
         console.error("getJobsCall", error);
       }
