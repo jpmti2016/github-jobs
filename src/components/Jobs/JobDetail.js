@@ -10,7 +10,7 @@ const JobDetail = (props) => {
       <div className="flex flex-col sm:flex-row">
         <div className="flex flex-col sm:w-1/3">
           <Link
-            to="/github-jobs"
+            to="/"
             className="flex items-center text-blue-600 hover:text-blue-800"
           >
             <svg

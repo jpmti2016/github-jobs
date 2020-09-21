@@ -16,13 +16,13 @@ function App() {
         <Switch>
           <Route
             exact
-            path="/github-jobs"
+            path="/"
             render={(props) => (
               <Jobs {...props} jobs={jobs} setJobs={setJobs} />
             )}
           />
           <Route
-            path={`/github-jobs/job/:jobId`}
+            path={`/job/:jobId`}
             render={(props) => <JobDetail {...props} />}
           />
         </Switch>
