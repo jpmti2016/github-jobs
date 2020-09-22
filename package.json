@@ -2,6 +2,8 @@
   "name": "github-jobs",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://jobs.github.com/",
+  "homepage": "jpmti2016.github.io/github-jobs",
   "dependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,6 +27,8 @@
     "start:react": "react-scripts start",
     "prebuild": "run-s build:tailwind",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
