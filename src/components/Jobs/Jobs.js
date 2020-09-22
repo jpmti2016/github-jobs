@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 import Job from "./Job";
 import Pagination from "../Pagination";
@@ -18,12 +17,13 @@ const Jobs = ({ jobs, setJobs }) => {
   useEffect(() => {
     const getGitHubJobs = async () => {
       try {
-        const response = await axios.get(
-          `/positions.json?description=${search}&location=${location}&full_time=${fulltime}`
-        );
+        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+        const url = `${proxyUrl}https://jobs.github.com/positions.json?description=${search}&location=${location}&full_time=${fulltime}`;
+        const response = await fetch(url);
+        const data = await response.json();
 
-        setJobs(response?.data);
-        setNumberOfItems(response?.data?.length);
+        setJobs(data);
+        setNumberOfItems(data?.length);
       } catch (error) {
         console.error("getJobsCall", error);
       }
