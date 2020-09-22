@@ -2,6 +2,7 @@
   "name": "github-jobs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jpmti2016.github.io/github-jobs",
   "proxy": "https://jobs.github.com",
   "dependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
