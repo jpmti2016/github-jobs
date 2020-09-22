@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useForm } from "react-hook-form";
 
 const SelectForm = ({
@@ -7,11 +7,13 @@ const SelectForm = ({
   setLocation,
   onTickLocation,
 }) => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data, e) => {
     setLocation(data.location);
     e.target.reset();
   };
+
+  useEffect(() => reset({location}), [location, reset]);
 
   return (
     <div className="sm:pr-6 mt-6 sm:mt-10 sm:w-1/4">
