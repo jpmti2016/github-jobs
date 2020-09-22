@@ -18,18 +18,18 @@ const Jobs = ({ jobs, setJobs }) => {
   const [location, setLocation] = useState("New York");
 
   useEffect(() => {
-    const getGitHubJobs = async () => {
-      try {
-        const response = await axios.get(
-          `/positions.json?description=${search}&location=${location}&full_time=${fulltime}`
-        );
+    // const getGitHubJobs = async () => {
+    //   try {
+    //     const response = await axios.get(
+    //       `/positions.json?description=${search}&location=${location}&full_time=${fulltime}`
+    //     );
 
-        setJobs(response?.data);
-        setNumberOfItems(response?.data?.length);
-      } catch (error) {
-        console.error("getJobsCall", error);
-      }
-    };
+    //     setJobs(response?.data);
+    //     setNumberOfItems(response?.data?.length);
+    //   } catch (error) {
+    //     console.error("getJobsCall", error);
+    //   }
+    // };
 
     // getGitHubJobs();
     const data = [
