@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 const SelectForm = ({
@@ -7,11 +7,15 @@ const SelectForm = ({
   setLocation,
   onTickLocation,
 }) => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data, e) => {
     setLocation(data.location);
     e.target.reset();
   };
+
+  useEffect(() => reset({ location }), [location, reset]);
+
+  console.log("form selct location", location);
 
   return (
     <div className="sm:pr-6 mt-6 sm:mt-10 sm:w-1/4">
@@ -49,6 +53,8 @@ const SelectForm = ({
             type="text"
             name="location"
             id="location"
+            // value={location}
+            // defaultValue={location}
             placeholder="City, state, zip code or country"
             className="w-full h-12 rounded pl-10 pr-4 text-xs shadow appearance-none border py-2 leading-tight focus:outline-none focus:shadow-outline"
             ref={register}
