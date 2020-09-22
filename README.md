@@ -1,6 +1,6 @@
 # github-jobs
 
-Making API calls is key to web development. This project explored the use of fetch to make API.
+Making API calls is key to web development. This project explored the use of axios to make API request.
 
 Also it was a way to implement the Github jobs challenge pusblished by devchallenges.io and work on my design skills.
 
@@ -15,7 +15,7 @@ Flexbox and css combinators continue amazing me.
 ## Technologies
 
 1. TailwindCSS
-2. fetch
+2. axios
 3. Github Job API
 4. JavaScript
 5. dayjs

@@ -18,7 +18,7 @@ const Jobs = ({ jobs, setJobs }) => {
   useEffect(() => {
     const getGitHubJobs = async () => {
       try {
-        const response = axios.get(
+        const response = await axios.get(
           `/positions.json?description=${search}&location=${location}&full_time=${fulltime}`
         );
 

@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App bg-gray-100">
       <Header />
-      <Router>
+      <Router basename="/github-jobs">
         <Switch>
           <Route
             exact
