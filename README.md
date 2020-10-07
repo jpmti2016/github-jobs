@@ -10,7 +10,7 @@ Flexbox and css combinators continue amazing me.
 ![GitHub last commit](https://img.shields.io/github/last-commit/jpmti2016/github-jobs)
 ![GitHub top language](https://img.shields.io/github/languages/top/jpmti2016/github-jobs)
 ![GitHub language count](https://img.shields.io/github/languages/count/jpmti2016/github-jobs)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub-jobs%2F)
+![Website](https://img.shields.io/website?url=https://jolly-knuth-487125.netlify.app/)
 
 ## Technologies
 
