@@ -2,6 +2,7 @@
   "name": "github-jobs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jpmti2016.com/github-jobs/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/custom-forms": "^0.2.1",
@@ -21,7 +22,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "prebuild": "run-s build:tailwind",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
