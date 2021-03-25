@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/jpmti2016/github-jobs/static/css/main.79c4437a.chunk.css",
-    "main.js": "/jpmti2016/github-jobs/static/js/main.9979dceb.chunk.js",
-    "main.js.map": "/jpmti2016/github-jobs/static/js/main.9979dceb.chunk.js.map",
+    "main.css": "/jpmti2016/github-jobs/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/jpmti2016/github-jobs/static/js/main.e351688c.chunk.js",
+    "main.js.map": "/jpmti2016/github-jobs/static/js/main.e351688c.chunk.js.map",
     "runtime-main.js": "/jpmti2016/github-jobs/static/js/runtime-main.4f98e05f.js",
     "runtime-main.js.map": "/jpmti2016/github-jobs/static/js/runtime-main.4f98e05f.js.map",
     "static/js/2.a59e79b4.chunk.js": "/jpmti2016/github-jobs/static/js/2.a59e79b4.chunk.js",
     "static/js/2.a59e79b4.chunk.js.map": "/jpmti2016/github-jobs/static/js/2.a59e79b4.chunk.js.map",
     "index.html": "/jpmti2016/github-jobs/index.html",
-    "static/css/main.79c4437a.chunk.css.map": "/jpmti2016/github-jobs/static/css/main.79c4437a.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/jpmti2016/github-jobs/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.a59e79b4.chunk.js.LICENSE.txt": "/jpmti2016/github-jobs/static/js/2.a59e79b4.chunk.js.LICENSE.txt",
     "static/media/backgroundImg.c8427568.png": "/jpmti2016/github-jobs/static/media/backgroundImg.c8427568.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4f98e05f.js",
     "static/js/2.a59e79b4.chunk.js",
-    "static/css/main.79c4437a.chunk.css",
-    "static/js/main.9979dceb.chunk.js"
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.e351688c.chunk.js"
   ]
 }
