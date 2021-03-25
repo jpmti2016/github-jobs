@@ -2,7 +2,7 @@
   "name": "github-jobs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jpmti2016/github-jobs",
+  "homepage": "https://jpmti2016.com/github-jobs",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/custom-forms": "^0.2.1",
