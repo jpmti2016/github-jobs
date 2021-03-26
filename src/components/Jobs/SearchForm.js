@@ -31,7 +31,7 @@ const SearchForm = ({ setSearch }) => {
 
         <input
           type="text"
-          className="pl-8 h-12 pr-16 sm:pr-32 sm:h-16 sm:px-10 w-full rounded text-xs shadow-md appearance-none border py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="pl-8 h-12 pr-16 sm:pr-32 sm:h-16 sm:px-10 w-full rounded-sm text-xs shadow-md appearance-none border py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Title, companies, expertise or benefits"
           name="search"
           ref={register}

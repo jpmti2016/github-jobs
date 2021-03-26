@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+.custom-checkbox {
+  @apply absolute h-px w-px hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-checkbox-label {
+  @apply block relative py-0 px-6;
 }
+.custom-checkbox-label::before {
+  @apply empty relative inline-block mr-2 w-5 h-5 bg-white;
+}
+
+.custom-checkbox:checked + .custom-checkbox-label::before {
+  @apply bg-blue-700;
+}
+.custom-checkbox:checked + .custom-checkbox-label::after {
+  @apply empty absolute top-1 left-7 border-l-2 border-b-2 border-gray-200 h-2 w-3 transform -rotate-45;
+}
+.custom-checkbox:focus + .custom-checkbox-label::before {
+  @apply shadow-sm outline-none ring;
+}
+
+.how-to-apply {
+  @apply text-sm pt-4;
+}
+
+div[class="how-to-apply"] a {
+  @apply text-blue-600;
+}
+
+div[class="how-to-apply"] a:hover {
+  @apply text-blue-800;
+}
+
+div[class="description"] p {
+  @apply mt-8 text-base leading-normal text-left;
+}
+
+div[class="description"] ul {
+  @apply mt-4 mb-4 ml-4;
+}
+
+div[class="description"] ul li {
+  @apply mt-2 font-medium list-disc;
+}
+
+ul[class="pagination"] li:last-of-type {
+  @apply mr-0;
+}
+@tailwind utilities;

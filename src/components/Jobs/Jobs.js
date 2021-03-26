@@ -17,8 +17,7 @@ const Jobs = ({ jobs, setJobs }) => {
   useEffect(() => {
     const getGitHubJobs = async () => {
       try {
-        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-        const url = `${proxyUrl}https://jobs.github.com/positions.json?description=${search}&location=${location}&full_time=${fulltime}`;
+        const url = `https://jobs.github.com/positions.json?description=${search}&location=${location}&full_time=${fulltime}`;
         const response = await fetch(url);
         const data = await response.json();
 

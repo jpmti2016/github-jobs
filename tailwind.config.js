@@ -58,7 +58,7 @@ module.exports = {
     fill: ["responsive", "hover", "focus"],
   },
   plugins: [
-    require("@tailwindcss/custom-forms"),
+    require("@tailwindcss/forms"),
     require("tailwindcss-pseudo")({ empty: true }),
   ],
 };

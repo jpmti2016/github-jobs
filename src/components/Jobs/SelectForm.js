@@ -21,7 +21,7 @@ const SelectForm = ({
         <label className="inline-flex items-center mt-3">
           <input
             type="checkbox"
-            className="form-checkbox h-5 w-5 text-blue-600 checked"
+            className="form-checkbox rounded-sm shadow-sm h-5 w-5 text-blue-600 checked"
             onClick={() => onChangeFullTime()}
           />
           <span className="ml-2 text-sm leading-snug text-gray-700">
@@ -52,7 +52,7 @@ const SelectForm = ({
             name="location"
             id="location"
             placeholder="City, state, zip code or country"
-            className="w-full h-12 rounded pl-10 pr-4 text-xs shadow appearance-none border py-2 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full h-12 rounded-sm pl-10 pr-4 text-xs shadow-sm appearance-none border py-2 leading-tight focus:outline-none focus:shadow-outline"
             ref={register}
           />
         </form>
@@ -65,7 +65,7 @@ const SelectForm = ({
               checked={location === "London"}
               value="London"
               onChange={(event) => onTickLocation(event)}
-              className="form-checkbox h-5 w-5 text-blue-500"
+              className="form-checkbox rounded-sm shadow-sm h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               London
@@ -81,7 +81,7 @@ const SelectForm = ({
               checked={location === "Amsterdam"}
               value="Amsterdam"
               onChange={(event) => onTickLocation(event)}
-              className="form-checkbox h-5 w-5 text-blue-500"
+              className="form-checkbox rounded-sm shadow-sm h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               Amsterdam
@@ -97,7 +97,7 @@ const SelectForm = ({
               checked={location === "New York"}
               value="New York"
               onChange={(event) => onTickLocation(event)}
-              className="form-checkbox h-5 w-5 text-blue-500"
+              className="form-checkbox rounded-sm shadow-sm h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               New York
@@ -113,7 +113,7 @@ const SelectForm = ({
               checked={location === "Berlin"}
               value="Berlin"
               onChange={(event) => onTickLocation(event)}
-              className="form-checkbox h-5 w-5 text-blue-500"
+              className="form-checkbox rounded-sm shadow-sm h-5 w-5 text-blue-500"
             />
             <span className="ml-2 text-sm leading-snug text-gray-700">
               Berlin

@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jpmti2016.com/github-jobs",
+  "proxy": "https://getridofcors.herokuapp.com/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@tailwindcss/forms": "^0.2.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
